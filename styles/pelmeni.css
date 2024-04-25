@@ -1,0 +1,129 @@
+@charset "UTF-8";
+html {
+  font: 400 1em/1.33 "Times New Roman"; /*Тег <font> представляет собой контейнер для изменения характеристик шрифта, таких как размер, цвет и гарнитура.*/
+  background-color: #DBBA90; /*цвет заднего фона*/
+}
+
+body {
+  padding-bottom: 3em; /*Устанавливает значение поля от нижнего края содержимого элемента.*/
+}
+
+.profile {
+  background-image: url("../img/pelmeni/pelmeni1.jpg"); /*изображение на фоне*/
+  box-shadow: inset 0 0 5em 1em #000; /*Добавляет тень к элементу.*/
+  height: 50vh; /*Устанавливает высоту блочных или заменяемых элементов*/
+  background-size: cover; /*Масштабирует фоновое изображение согласно заданным размерам.*/
+}
+
+.profile {
+  width: 50%; /*Устанавливает ширину блочных или заменяемых элементов*/
+  position: fixed; /*Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице.*/
+  top: 0; /*Для позиционированного элемента определяет расстояние от верхнего края родительского элемента до верхнего края дочернего элемента.*/
+  left: 0; /*Для позиционированного элемента определяет расстояние от левого края родительского элемента до верхнего края дочернего элемента.*/
+  bottom: 0; /*Для позиционированного элемента определяет расстояние от нижнего края родительского элемента до верхнего края дочернего элемента.*/
+  height: auto; /*Устанавливает высоту блочных или заменяемых элементов*/
+}
+
+hr {
+  overflow: visible; /*Свойство overflow управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров.*/
+  padding: 0; /*Устанавливает значение полей вокруг содержимого элемента.*/
+  border: none; /*границы*/
+  border-top: medium double #333; /*границы сверху*/
+  color: #333; /*цвет текста*/
+  text-align: center; /*выравнивание текста*/
+}
+
+hr:after {
+  content: "§"; /*content устанавливает значение атрибута, заданного с помощью name или http-equiv*/
+  display: inline-block; /*Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.*/
+  position: relative; /*Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице.*/
+  top: -0.7em; 
+  font-size: 1.5em; /*размер текста*/
+  padding: 0 0.25em;
+  background: #1d1d1d; /*цвет фона*/
+  color: #DBBA90 /*цвет текста*/
+}
+
+article {
+  color: #1d1d1d;
+}
+
+article {
+  margin-left: 50%; /*отступ от левого края страницы*/
+  position: relative;
+  max-width: 66em; /*Устанавливает максимальную ширину элемента*/
+}
+
+header {
+  text-align: center;
+  padding: 0 2em;
+}
+
+h1 {
+  text-transform: uppercase; /*Управляет преобразованием текста элемента в заглавные или прописные символы.*/
+  font-weight: 300; /*Устанавливает насыщенность шрифта.*/
+}
+h1 .headline-1,
+h1 .headline-2 {
+  line-height: 1; /*Устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта.*/
+}
+h1 .headline-1 {
+  font-size: 8.5vw;
+}
+h1 .headline-2 {
+  font-size: 6vw;
+}
+
+.subheading {
+  color: #1d1d1d;
+  font-size: 1.5625em;
+  max-width: 25em;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1.5em; 
+}
+
+section {
+  column-width: 14em; /*Задаёт оптимальную ширину колонки в многоколоночном тексте*/
+  column-gap: 1.33em; /*Задаёт расстояние между колонками в многоколоночном тексте.*/
+  padding: 0 3em;
+}
+section p:first-of-type:first-letter {
+  float: left; /*обтекание*/
+  font-size: 7em;
+  line-height: 1;
+  margin-top: -0.2em;
+  margin-bottom: -0.2em; /*отступ от нижнего края страницы*/
+  margin-right: 0.1em; /*отступ от правого края страницы*/
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 1.33em;
+  vertical-align: middle; /*Выравнивает элемент по вертикали относительно своего родителя, окружающего текста или ячейки таблицы.*/
+}
+
+blockquote {
+  border-left: 0.5em solid #1d1d1d; /*граница слева*/
+  font-size: 2em;
+  padding: 0.5em;
+  line-height: 1.5;
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  right: 100%;
+  top: 70vh;
+  width: 9em;
+  background: #DBBA90;
+}
+blockquote::before, blockquote::after {
+  color: #1d1d1d;
+  font-size: 1.25em;
+  line-height: 0;
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FIT | Главная</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="img/logo.svg">
+</head>
+<body>
+    <svg width="250" height="250" class="krug">
+    <defs>
+        <radialGradient id="RadialGradient1">
+            <stop offset="0%" stop-color="rgba(255, 255, 255, 0.3)" />
+            <stop offset="100%" stop-color="rgba(38, 38, 38, 0)" />
+        </radialGradient>
+    </defs>
+
+    <rect
+            x="0"
+            y="0"
+            rx="0"
+            ry="0"
+            width="190"
+            height="190"
+            fill="url(#RadialGradient1)" />
+</svg>
+    <svg width="250" height="250" class="krug2">
+    <defs>
+        <radialGradient id="RadialGradient1">
+            <stop offset="0%" stop-color="rgba(255, 255, 255, 0.3)" />
+            <stop offset="100%" stop-color="rgba(38, 38, 38, 0)" />
+        </radialGradient>
+    </defs>
+
+    <rect
+            x="0"
+            y="0"
+            rx="0"
+            ry="0"
+            width="190"
+            height="190"
+            fill="url(#RadialGradient1)" />
+</svg>
+    <header>
+        <img src="img/logo.svg" alt="logo">
+    </header>
+    <div class="info">
+        <h1>Информация о себе</h1>
+        <p></p>
+        <h1>Для чего этот сайт?</h1>
+        <p>Этот сайт создан для того, чтобы продемонстрировать все мои работы работодателю.</p>
+        <p>Данный сайт имеет вид портфолио.</p>
+    </div>
+    <main>
+        <div class="card" id="card1" onclick="window.location.href='pages/pelmeni.html'">
+            <img src="img/pelmeni/pelmeni.jpg" class="card-image" id="1" alt="Фото сайта">
+            <div class="description">
+                <h1>"Пельмени"</h1>
+                <p>Проектный сайт по шаблону "Пельмени с мясом"</p>
+            </div>
+        </div>
+        <div class="card" id="card2">
+            <img src="img/no.jpg" class="card-image" id="2" alt="Фото сайта">
+            <div class="description">
+                <h1>Название</h1>
+                <p>Описание</p>
+            </div>
+        </div>
+        <div class="card" id="card3" onclick="window.location.href='pages/fnbts.html'">
+            <img src="img/fnbts/fnbts.jpg" class="card-image" id="3" alt="Фото сайта">
+            <div class="description">
+                <h1>"ФНБТС"</h1>
+                <p>Для увеличения члена на 4 см нужно всего лишь... Смотреть далее</p>
+            </div>
+        </div>
+        <div class="card" id="card4" onclick="window.location.href='pages/universitet.html'">
+            <img src="img/universitet/universitet.jpg" class="card-image" id="4" alt="Фото сайта">
+            <div class="description">
+                <h1>"Университет"</h1>
+                <p>Проектный сайт ВУЗов Москвы "Университет Образования"</p>
+            </div>
+        </div>
+        <div class="card" id="card5" onclick="window.location.href='pages/floraldesign.html'">
+            <img src="img/floraldesign/floraldesign.jpg" class="card-image" id="5" alt="Фото сайта">
+            <div class="description">
+                <h1>"Floral Design Studio"</h1>
+                <p>Проектный сайт по шаблону "Floral Design Studio"</p>
+            </div>
+        </div>
+        <div class="card" id="card6">
+            <img src="img/no.jpg" class="card-image" id="6" alt="Фото сайта">
+            <div class="description">
+                <h1>"Название"</h1>
+                <p>Описание</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+<script src="scripts/animation.js"></script>
+</body>
+</html>

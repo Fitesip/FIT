@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+body {
+    background: #151515;
+    overflow-x: hidden;
+}
+header {
+    background: linear-gradient(to right, rgba(21, 21, 21, 0.7), rgba(47, 47, 47, 0.7));
+    height: 75px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+header img {
+    max-width: 75px;
+    max-height: 75px;
+}
+main {
+    padding-top: 30px;
+    max-width: 1860px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.card {
+    width: 580px;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    transition: 0.6s ease-in-out;
+    z-index: 3;
+    overflow: hidden;
+}
+.card-image {
+    max-width: 580px;
+    max-height: 325px;
+    margin-top: -325px;
+    z-index: 1;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    transition: 0.6s ease-in-out;
+}
+.description {
+    width: 100%;
+    max-height: 148px;
+    height: 100%;
+    background: #212121;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 5px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.description h1 {
+    font-family: Montserrat, serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #F4F4F4;
+}
+.description p {
+    font-family: Montserrat, serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #F4F4F4;
+}
+.krug {
+    position: absolute;
+    margin-top: 500px;
+    z-index: 1;
+    margin-left: 500px;
+    overflow: hidden;
+    animation: krug infinite ease-in-out 7s;
+}
+.krug2 {
+    position: absolute;
+    margin-left: 1600px;
+    margin-top: 1300px;
+    z-index: 1;
+    overflow: hidden;
+    animation: krug2 infinite ease-in-out 5s;
+}
+@keyframes krug {
+    0% {
+        transform: scale(9);
+    }
+    50% {
+        transform: scale(11.5);
+    }
+    100% {
+        transform: scale(9);
+    }
+}
+@keyframes krug2 {
+    0% {
+        transform: scale(9);
+    }
+    50% {
+        transform: scale(11.3);
+    }
+    100% {
+        transform: scale(9);
+    }
+}
+.card:hover {
+    border: #F4F4F4 solid 1px;
+    transform: scale(1.05);
+    cursor: pointer;
+    z-index: 5;
+}
+
+.info {
+    margin-top: 30px;
+    max-width: 1860px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #F4F4F4;
+    border-radius: 25px;
+    gap: 25px;
+    text-align: center;
+}
+.info h1 {
+    font-size: 64px;
+    font-family: Montserrat, serif;
+    color: #F4F4F4;
+    padding-bottom: 25px;
+}
+.info p {
+    font-size: 32px;
+    font-family: Montserrat, serif;
+    color: #F4F4F4;
+}
