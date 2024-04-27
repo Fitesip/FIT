@@ -5,6 +5,7 @@ let card_arr = [
     card4 = document.getElementById("card4"),
     card5 = document.getElementById("card5"),
     card6 = document.getElementById("card6"),
+    card7 = document.getElementById("card7"),
 ];
 
 let img_arr = [
@@ -14,6 +15,7 @@ let img_arr = [
     img4 = document.getElementById("4"),
     img5 = document.getElementById("5"),
     img6 = document.getElementById("6"),
+    img7 = document.getElementById("7"),
 ];
 
 for (let i = 0; i < card_arr.length; i++){

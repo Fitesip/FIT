@@ -1,47 +1,47 @@
 @charset "UTF-8";
 html {
-  font: 400 1em/1.33 "Times New Roman"; /*Тег <font> представляет собой контейнер для изменения характеристик шрифта, таких как размер, цвет и гарнитура.*/
-  background-color: #DBBA90; /*цвет заднего фона*/
+  font: 400 1em/1.33 "Times New Roman";
+  background-color: #DBBA90;
 }
 
 body {
-  padding-bottom: 3em; /*Устанавливает значение поля от нижнего края содержимого элемента.*/
+  padding-bottom: 3em;
 }
 
 .profile {
-  background-image: url("../img/pelmeni/pelmeni1.jpg"); /*изображение на фоне*/
-  box-shadow: inset 0 0 5em 1em #000; /*Добавляет тень к элементу.*/
-  height: 50vh; /*Устанавливает высоту блочных или заменяемых элементов*/
-  background-size: cover; /*Масштабирует фоновое изображение согласно заданным размерам.*/
+  background-image: url("../img/pelmeni/pelmeni1.jpg");
+  box-shadow: inset 0 0 5em 1em #000;
+  height: 50vh;
+  background-size: cover;
 }
 
 .profile {
-  width: 50%; /*Устанавливает ширину блочных или заменяемых элементов*/
-  position: fixed; /*Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице.*/
-  top: 0; /*Для позиционированного элемента определяет расстояние от верхнего края родительского элемента до верхнего края дочернего элемента.*/
-  left: 0; /*Для позиционированного элемента определяет расстояние от левого края родительского элемента до верхнего края дочернего элемента.*/
-  bottom: 0; /*Для позиционированного элемента определяет расстояние от нижнего края родительского элемента до верхнего края дочернего элемента.*/
-  height: auto; /*Устанавливает высоту блочных или заменяемых элементов*/
+  width: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: auto;
 }
 
 hr {
-  overflow: visible; /*Свойство overflow управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров.*/
-  padding: 0; /*Устанавливает значение полей вокруг содержимого элемента.*/
-  border: none; /*границы*/
-  border-top: medium double #333; /*границы сверху*/
-  color: #333; /*цвет текста*/
-  text-align: center; /*выравнивание текста*/
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
 }
 
 hr:after {
-  content: "§"; /*content устанавливает значение атрибута, заданного с помощью name или http-equiv*/
-  display: inline-block; /*Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.*/
-  position: relative; /*Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице.*/
+  content: "§";
+  display: inline-block;
+  position: relative;
   top: -0.7em; 
-  font-size: 1.5em; /*размер текста*/
+  font-size: 1.5em;
   padding: 0 0.25em;
-  background: #1d1d1d; /*цвет фона*/
-  color: #DBBA90 /*цвет текста*/
+  background: #1d1d1d;
+  color: #DBBA90
 }
 
 article {
@@ -49,9 +49,9 @@ article {
 }
 
 article {
-  margin-left: 50%; /*отступ от левого края страницы*/
+  margin-left: 50%;
   position: relative;
-  max-width: 66em; /*Устанавливает максимальную ширину элемента*/
+  max-width: 66em;
 }
 
 header {
@@ -60,12 +60,12 @@ header {
 }
 
 h1 {
-  text-transform: uppercase; /*Управляет преобразованием текста элемента в заглавные или прописные символы.*/
-  font-weight: 300; /*Устанавливает насыщенность шрифта.*/
+  text-transform: uppercase;
+  font-weight: 300;
 }
 h1 .headline-1,
 h1 .headline-2 {
-  line-height: 1; /*Устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта.*/
+  line-height: 1;
 }
 h1 .headline-1 {
   font-size: 8.5vw;
@@ -84,27 +84,27 @@ h1 .headline-2 {
 }
 
 section {
-  column-width: 14em; /*Задаёт оптимальную ширину колонки в многоколоночном тексте*/
-  column-gap: 1.33em; /*Задаёт расстояние между колонками в многоколоночном тексте.*/
+  column-width: 14em;
+  column-gap: 1.33em;
   padding: 0 3em;
 }
 section p:first-of-type:first-letter {
-  float: left; /*обтекание*/
+  float: left;
   font-size: 7em;
   line-height: 1;
   margin-top: -0.2em;
-  margin-bottom: -0.2em; /*отступ от нижнего края страницы*/
-  margin-right: 0.1em; /*отступ от правого края страницы*/
+  margin-bottom: -0.2em;
+  margin-right: 0.1em;
 }
 
 img {
   max-width: 100%;
   margin-bottom: 1.33em;
-  vertical-align: middle; /*Выравнивает элемент по вертикали относительно своего родителя, окружающего текста или ячейки таблицы.*/
+  vertical-align: middle;
 }
 
 blockquote {
-  border-left: 0.5em solid #1d1d1d; /*граница слева*/
+  border-left: 0.5em solid #1d1d1d;
   font-size: 2em;
   padding: 0.5em;
   line-height: 1.5;
@@ -126,4 +126,8 @@ blockquote::before {
 }
 blockquote::after {
   content: close-quote;
+}
+a {
+  color: #1d1d1d;
+  text-decoration: none;
 }
