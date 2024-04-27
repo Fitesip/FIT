@@ -3,7 +3,7 @@
     src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 body {
-    background: linear-gradient(to right, rgba(21, 21, 21, 0.7), rgba(47, 47, 47, 0.7), rgba(21, 21, 21, 0.7), rgba(21, 21, 21, 0.7));
+    background: linear-gradient(to right, rgba(21, 21, 21, 1), rgba(47, 47, 47, 1), rgba(21, 21, 21, 1), rgba(21, 21, 21, 1));
     overflow-x: hidden;
 }
 header {
