@@ -16,7 +16,7 @@ let img_arr = [
     img6 = document.getElementById("6"),
 ];
 
-for (let i = 0; i<card_arr.length; i++){
+for (let i = 0; i < card_arr.length; i++){
     card_arr[i].onmouseleave = function (){
         img_arr[i].style.marginTop = '-325' + 'px';
         card_arr[i].style.height = '148' + 'px';
