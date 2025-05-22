@@ -1,0 +1,257 @@
+@font-face {
+    font-family: RussoOne;
+    src: url("../fonts/RussoOne/RussoOne.ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+*, html {
+    margin: unset;
+}
+a,p,h1,h2,h3,button,input,textarea {
+    font-family: Montserrat, serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: unset;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+a {
+    transition: 0.2s;
+}
+a:hover {
+    color: #FFA600;
+}
+button {
+    transition: 0.2s;
+}
+button:hover {
+    background: #FFFFFF !important;
+    color: #FFA600 !important;
+}
+header {
+    background: #010632;
+    height: 96px;
+    max-width: 1920px;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 48px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.firstBlock {
+    display: flex;
+    background: url("../img/byck/promoImage.png");
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1440px;
+    height: 700px;
+}
+.firstBlock h1 {
+    font-size: 128px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.path {
+    display: flex;
+    gap: 10px;
+}
+.path p {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+}
+.path h3 {
+    color: #FFA600;
+    font-size: 36px;
+    font-weight: 700;
+}
+.path h2 {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+}
+.pages {
+    gap: 10px;
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 18px;
+}
+.order {
+    padding: 10px;
+    background: #FFA600;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.about {
+    margin-top: 125px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.imgBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.miniImgBlock {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.miniImgBlockImg {
+    transition: 0.2s;
+}
+.miniImgBlockImg:hover {
+    scale: 1.1;
+}
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    gap: 10px;
+}
+.textBlock h1 {
+    color: #FFA600;
+    font-size: 44px;
+    font-weight: 800;
+}
+.textBlock h2 {
+    font-size: 48px;
+    font-weight: 800;
+}
+.textBlock p {
+    font-size: 20px;
+    font-weight: 800;
+}
+.pluses {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+.plus {
+    border-left: 5px solid #FFA600;
+    display: flex;
+    gap: 5px;
+    padding-left: 5px;
+    align-items: center;
+}
+.plus h1 {
+    font-size: 84px;
+    font-weight: 800;
+}
+.plus p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #787070;
+    max-width: 150px;
+}
+.textBlock button {
+    padding: 30px 40px;
+    background: #FFA600;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: none;
+    width: max-content;
+    align-self: center;
+    margin-top: 40px;
+}
+footer {
+    margin-top: 128px;
+    display: flex;
+    background: #010632;
+    max-width: 1920px;
+    width: 95%;
+    padding: 50px;
+    flex-direction: column;
+}
+.linksContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.links h1 {
+    color: #FFA600;
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+.links p, a {
+    font-size: 22px;
+    color: #FFFFFF;
+    font-weight: 500;
+    max-width: 270px;
+}
+.miniForm {
+    display: flex;
+    background: #FFFFFF;
+    border: 3px solid #FFA600;
+    align-items: center;
+    margin-top: 70px;
+}
+.miniForm input {
+    border: none;
+    font-size: 16px;
+    padding: 15px;
+}
+.miniForm button {
+    padding: 5px 15px;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #FFA600;
+    border: none;
+    height: max-content;
+    margin-right: 5px;
+}
+.copyright {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright p {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.miniLinks {
+    display: flex;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+    gap: 10px;
+}
+.miniLinks hr {
+    height: 27px;
+    width: 1px;
+    background: #FFFFFF;
+}

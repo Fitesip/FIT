@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Geologica;
+    src: url("../fonts/Geologica/Geologica.ttf");
+}
+*, html {
+    margin: unset;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a,p,h1,h2,h3,input,button {
+    font-family: Geologica, serif;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 1440px;
+    border-bottom: 6px solid #006633;
+}
+.search {
+    display: flex;
+    gap: 5px;
+}
+.searchinput {
+    width: 283px;
+    height: 22px;
+    border: 1px solid #006633;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+}
+.pages {
+    display: flex;
+    gap: 50px;
+}
+.pages a {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+}
+.promoblock {
+    max-width: 1440px;
+    height: 605px;
+    display: flex;
+}
+.arrows {
+    display: flex;
+    position: absolute;
+    width: 1440px;
+    justify-content: space-between;
+    margin-top: 263.5px;
+    z-index: 10;
+}
+.promocard {
+    background: url("../img/cinmax/dedroso.png");
+    padding: 45px 200px;
+    color: #FFFFFF;
+    width: 1440px;
+    flex-shrink: 0;
+    transition: 0.5s;
+}
+.promocards {
+    display: flex;
+    overflow: hidden;
+    max-width: 1440px;
+}
+.promocardtext h1 {
+    font-size: 30px;
+}
+.promocardtext p {
+    font-size: 20px;
+    max-width: 410px;
+    margin-top: 72px;
+}
+.promocardbuttons {
+    display: flex;
+    gap: 25px;
+    margin-top: 72px;
+}
+.button1 {
+    background: #006633;
+    padding: 25px 33px;
+    font-size: 20px;
+    color: #66CC99;
+    border: none;
+    border-radius: 19px;
+    transition: 0.2s;
+}
+.button1:hover {
+    background: #66CC99;
+    color: #006633;
+}
+.background1 {
+    position: absolute;
+    padding-left: 1230px;
+}
+.background2 {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    z-index: -1;
+}
+.background3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 720px;
+    right: 570px;
+    z-index: -1;
+}
+.background4 {
+    position: absolute;
+    right: 0;
+    top: 120px;
+    z-index: -1;
+}
+.background5 {
+    position: absolute;
+    right: 0;
+    top: 450px;
+    z-index: -1;
+}
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 30px 20px;
+    background: rgba(11, 11, 11, 0.1);
+    border-top: 1px solid #007241;
+    max-width: 1860px;
+    width: 100%;
+    align-items: center;
+}
+.footerpages {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    width: 329px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.logoandcopyright {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.cinmax {
+    color: #006633;
+    font-size: 15px;
+    margin-bottom: 15px;
+}

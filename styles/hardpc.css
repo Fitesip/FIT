@@ -1,0 +1,161 @@
+@font-face {
+    font-family: Oswald;
+    src: url("../fonts/Oswald/Oswald.ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+*, html {
+    margin: unset;
+}
+p, h2, h3, a, button {
+    line-height: 150%;
+}
+h1 {
+    line-height: 120%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1D1D1D;
+}
+.menu {
+    display: none;
+}
+.qtyNPrice h3 {
+    display: none;
+}
+.pages {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.logoContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pagesContainer {
+    overflow: hidden;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-out;
+    border-left: 2px solid #F4F4F4;
+    padding-left: 5px;
+    z-index: 100;
+}
+.pagesContainer a {
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+}
+.arrow {
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+}
+header {
+    width: 1410px;
+    height: 48px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 105px;
+    height: 48px;
+}
+.numNCart {
+    display: flex;
+    gap: 25px;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F4F4F4;
+    align-items: center;
+}
+.headerCartContainer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.cartImage {
+    width: 30px;
+    height: 30px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+}
+.promoBlock {
+    display: flex;
+    justify-content: center;
+    margin-top: 386px;
+    width: 1440px;
+    height: 626px;
+}
+.promoImage {
+    position: absolute;
+    max-width: 1920px;
+    width: 100%;
+    height: 1080px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.promoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.promoContainer h1 {
+    font-family: Oswald, serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: #F4F4F4;
+}
+.promoContainer p {
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F4F4F4;
+}
+.buttonsContainer {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+.viewCatalog {
+    border: none;
+    background: #74ABFF;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1D1D1D;
+    padding: 18px 24px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.viewCatalog:hover {
+    background: #F4F4F4;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    padding: 24px 0;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    border-top: 1px solid #7A7A7A;
+
+}

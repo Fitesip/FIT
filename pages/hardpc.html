@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HARDPC</title>
+    <link rel="stylesheet" href="../styles/hardpc.css">
+</head>
+<body>
+    <header>
+        <div class="pages">
+            <div class="logoContainer">
+                <img src="../img/hardpc/HARDPC.svg" alt="" class="logo">
+                <img src="../img/hardpc/White-Arrow.svg" class="arrow" alt="">
+            </div>
+            <nav class="pagesContainer">
+                <a href="https://fitesip.github.io/HARDPC/">Перейти на сайт</a>
+            </nav>
+        </div>
+        <div class="numNCart">
+            <p>+7 (495) 120-35-20</p>
+
+        </div>
+    </header>
+    <main>
+        <div class="promoBlock">
+            <img src="../img/hardpc/PromoImage.webp" alt="" class="promoImage">
+            <div class="promoContainer">
+                <h1>МОЩНЫЕ ИГРОВЫЕ КОМПЬЮТЕРЫ</h1>
+                <p>Подберите готовый игровой компьютер. Или закажите сборку своего идеального ПК</p>
+                <div class="buttonsContainer">
+                    <button class="viewCatalog" onclick="document.location.href='https://fitesip.github.io/HARDPC/'">Перейти на сайт</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="../img/hardpc/HARDPC.svg" alt="" class="logo">
+        <div class="numNCart">
+            <p>+7 (495) 120-35-20</p>
+        </div>
+    </footer>
+</body>
+<script>
+    let open = false
+    let pages = document.querySelector('.pages')
+    let pagesContainer = document.querySelector('.pagesContainer')
+    let arrow = document.querySelector('.arrow')
+
+    pages.addEventListener('click', function () {
+        if (!open) {
+            pagesContainer.style.maxHeight = '170px'
+            arrow.style.rotate = 'x 180deg'
+            open = true
+        }
+        else {
+            pagesContainer.style.maxHeight = '0'
+            arrow.style.rotate = 'x 0deg'
+            open = false
+        }
+    })
+</script>
+</html>

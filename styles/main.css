@@ -3,11 +3,11 @@
     src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 body {
-    background: linear-gradient(to right, rgba(21, 21, 21, 1), rgba(47, 47, 47, 1), rgba(21, 21, 21, 1), rgba(21, 21, 21, 1));
+    background: linear-gradient(75deg, rgba(21, 21, 21, 1), rgba(47, 47, 47, 1), rgba(21, 21, 21, 1), rgba(21, 21, 21, 1));
     overflow-x: hidden;
 }
 header {
-    background: linear-gradient(to right, rgba(21, 21, 21, 0.7), rgba(47, 47, 47, 0.7));
+    background: linear-gradient(to left, rgba(21, 21, 21, 0.7), rgba(47, 47, 47, 0.7));
     height: 75px;
     width: 100%;
     z-index: 2;
@@ -60,6 +60,7 @@ main {
     gap: 5px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    text-align: center;
 }
 .description h1 {
     font-family: Montserrat, serif;
